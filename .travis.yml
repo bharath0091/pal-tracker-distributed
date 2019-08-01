@@ -140,6 +140,7 @@ jobs:
     - stage: migrate
       language: java
       before_install:
+        - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 762E3157
         - wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
         - echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
         - sudo apt-get update
