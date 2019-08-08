@@ -38,7 +38,7 @@ subprojects {
     defaultTasks "clean", "build"
 
     repositories {
-        mavenLocal()
+        mavenCentral()
     }
 
     dependencies {
